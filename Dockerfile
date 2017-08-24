@@ -22,7 +22,7 @@ RUN unlink /var/log/nginx/access.log \
     && chown nginx /var/log/nginx/*log \
     && chmod 644 /var/log/nginx/*log
 
-COPY ./conf.d/stub_status.conf /etc/nginx/conf.d
+#COPY ./conf.d/stub_status.conf /etc/nginx/conf.d
 
 COPY ./entrypoint.sh /entrypoint.sh
 
